@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>WORK-TO-DOS</title>
+    <script src="./app.js"></script>
+</head>
+
+<body class="bg-info">
+    <div class="container bg-info">
+            <div id="myDIV" class="header">
+                    <h2>WORK-TO-DOS</h2>
+                    <br>
+                    <h4 class="text-warning">Enter text into the input filed to add itens to your list</h4>
+                    <br>
+                    <h4 class="text-success">click the item to mark it as complete</h4>
+                    <br>
+                    <h4 class="text-light">click the "X" to remove the itrm from your list.</h4>
+                    <br>
+                    <input type="text" id="myInput" onkeydown = "if (event.keyCode == 13)
+                    document.getElementById('myInput').click()" placeholder="New item..." >
+                    <span onclick="newElement()" id="add" class="addBtn">Add</span>
+            </div>
+            <ul id="myUL">
+                    <li>Agnes<span class="close" onclick="removeItem()">x</span></li>
+            </ul>
+    </div>
+  
+
+   
+</body>
+
+</html>
